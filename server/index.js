@@ -37,7 +37,7 @@ app.post("/users", (req,res) => {
     let id = Date.now();
     users.push({id,name,age,city});
 
-    fs.writeFile("./smaple.json", JSON.stringify
+    fs.writeFile("./sample.json", JSON.stringify
     (users), (err, data) => {
         return res.json({message: "User details added success" });
     });
