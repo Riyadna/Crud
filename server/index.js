@@ -55,7 +55,7 @@ app.patch("/users/:id", (req,res) => {
     let index = users.findIndex((user) => user.id == id);
     users.splice(index,1,{...req.body})
 
-    fs.writeFile("./smaple.json", JSON.stringify
+    fs.writeFile("./sample.json", JSON.stringify
     (users), (err, data) => {
         return res.json({message: "User details apdated success" });
     });
