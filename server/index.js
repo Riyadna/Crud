@@ -18,7 +18,7 @@ app.use(
 app.get("/users", (req,res) => {
  return res.json(users);
 });
-smaple
+
 //Delete User Details
 app.delete("/users/:id", (req,res) => {
     let id = Number(req.params.id);
