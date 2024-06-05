@@ -18,12 +18,12 @@ app.use(
 app.get("/users", (req,res) => {
  return res.json(users);
 });
-
+smaple
 //Delete User Details
 app.delete("/users/:id", (req,res) => {
     let id = Number(req.params.id);
     let filteredUsers = users.filter((user) => user.id !== id);
-    fs.writeFile("./smaple.json", JSON.stringify
+    fs.writeFile("./sample.json", JSON.stringify
     (filteredUsers), (err, data) => {
         return res.json(filteredUsers);
     });
