@@ -128,7 +128,7 @@ function App() {
         </table>
         {isModalOpen && (
           <div className="modal">
-            <div className="modal-container">
+            <div className="modal-content">
               <span className="close" onClick={closeModal}>
                 &times;
               </span>
